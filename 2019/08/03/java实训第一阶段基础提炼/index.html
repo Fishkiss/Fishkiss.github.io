@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>java实训第一阶段基础提炼 | Just For Fun</title>
+  <title>java实训第一阶段基础提炼(一) | Just For Fun</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="JRE和JDK 什么是JRE？JRE（Java Runtime Environment）即Java运行时环境，主要负责运行Java程序。  什么是JDK？ JDK（Java Development Kit）即Java开发工具包，主要用来开发Java程序，给Java开发人员使用的。  JDK和JRE的关系 Java程序员开发完程序之后需要编译运行，因此JDK包含了JRE，安装JDK之后，就不用再去特">
 <meta name="keywords" content="java, web, mysql">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java实训第一阶段基础提炼">
+<meta property="og:title" content="java实训第一阶段基础提炼(一)">
 <meta property="og:url" content="http://yoursite.com/2019/08/03/java实训第一阶段基础提炼/index.html">
 <meta property="og:site_name" content="Just For Fun">
 <meta property="og:description" content="JRE和JDK 什么是JRE？JRE（Java Runtime Environment）即Java运行时环境，主要负责运行Java程序。  什么是JDK？ JDK（Java Development Kit）即Java开发工具包，主要用来开发Java程序，给Java开发人员使用的。  JDK和JRE的关系 Java程序员开发完程序之后需要编译运行，因此JDK包含了JRE，安装JDK之后，就不用再去特">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-03T13:17:31.024Z">
+<meta property="og:updated_time" content="2019-08-03T14:13:58.449Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java实训第一阶段基础提炼">
+<meta name="twitter:title" content="java实训第一阶段基础提炼(一)">
 <meta name="twitter:description" content="JRE和JDK 什么是JRE？JRE（Java Runtime Environment）即Java运行时环境，主要负责运行Java程序。  什么是JDK？ JDK（Java Development Kit）即Java开发工具包，主要用来开发Java程序，给Java开发人员使用的。  JDK和JRE的关系 Java程序员开发完程序之后需要编译运行，因此JDK包含了JRE，安装JDK之后，就不用再去特">
   
     <link rel="alternative" href="/atom.xml" title="Just For Fun" type="application/atom+xml">
@@ -182,7 +182,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      java实训第一阶段基础提炼
+      java实训第一阶段基础提炼(一)
     </h1>
   
 
@@ -232,6 +232,49 @@
 </ul>
 </li>
 </ul>
+<h3 id="自增和自减运算符写在变量的前面和后面有什么区别呢？"><a href="#自增和自减运算符写在变量的前面和后面有什么区别呢？" class="headerlink" title="自增和自减运算符写在变量的前面和后面有什么区别呢？"></a>自增和自减运算符写在变量的前面和后面有什么区别呢？</h3><ul>
+<li>单独使用：<ul>
+<li>放在变量的前面和后面效果一样，就像上面的例子</li>
+</ul>
+</li>
+<li>参与运算使用：<ul>
+<li>放在变量的前面，先自增或者自减，然后再参与运算。</li>
+<li>放在变量的后面，先参与运算，再自增或者自减。</li>
+</ul>
+</li>
+</ul>
+<h3 id="赋值运算符有哪些"><a href="#赋值运算符有哪些" class="headerlink" title="赋值运算符有哪些"></a><strong>赋值运算符有哪些</strong></h3><ol>
+<li>=</li>
+<li>+= 把左边和右边做加法，然后赋值给左边</li>
+<li>-= 把左边和右边做减法，然后赋值给左边</li>
+<li>*= 把左边和右边做乘法，然后赋值给左边</li>
+<li>/= 把左边和右边做除法，然后赋值给左边</li>
+<li>%= 把左边和右边做取余，然后赋值给左边</li>
+</ol>
+<h3 id="运算符与表达式"><a href="#运算符与表达式" class="headerlink" title="运算符与表达式"></a>运算符与表达式</h3><h5 id="运算符的分类"><a href="#运算符的分类" class="headerlink" title="运算符的分类"></a>运算符的分类</h5><ul>
+<li>• 算术运算符</li>
+<li>• 比较运算符 </li>
+<li>• 逻辑运算符 </li>
+<li>• 赋值运算符 </li>
+<li>• 逗号运算符</li>
+</ul>
+<h5 id="运算符的优先级及结合性"><a href="#运算符的优先级及结合性" class="headerlink" title="运算符的优先级及结合性"></a>运算符的优先级及结合性</h5><ul>
+<li>算术运算符 &gt; 比较运算符 &gt; 逻辑运算符 &gt;  赋值运算符 &gt;  逗号运算符</li>
+<li>左结合 ： 算术运算符 、 比较运算符 、 逻辑运算符 </li>
+<li>右结合 ： 赋值运算符</li>
+</ul>
+<h5 id="字符串连接运算符"><a href="#字符串连接运算符" class="headerlink" title="字符串连接运算符"></a>字符串连接运算符</h5><p>+运算符了，除了做加法之外还可以连接字符串:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>.做加法运算(+两边只要都是数字类型，一定是加法运算)</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>.字符串连接(+两边任意一端只要是字符串类型，则一定是字符串连接)</span><br></pre></td></tr></table></figure>
+
+<p>`当一个表达式当中有多个加号，并且在没有小括号的前提下：遵循自左向右的顺序依次执行。（有小括号的优先级较高）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//字符串连接</span></span><br><span class="line">    System.out.println(<span class="string">"PI="</span> + <span class="number">3.14</span>);  <span class="comment">//运算结果是字符串类型</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">int</span> b = <span class="number">12</span>;</span><br><span class="line"></span><br><span class="line">    System.out.println(<span class="string">"a+b="</span> + (a+b)); <span class="comment">//"a+b=22"</span></span><br><span class="line"></span><br><span class="line">    System.out.println(<span class="string">"a+b="</span> + a + b); <span class="comment">//"a+b=1012"</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//把变量放到某个字符串当中</span></span><br><span class="line">    System.out.println(a + <span class="string">"+"</span> + b + <span class="string">"="</span> + (a+b)); <span class="comment">//"10+12=22"</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="三目运算符"><a href="#三目运算符" class="headerlink" title="三目运算符"></a>三目运算符</h5><ul>
+<li>语法：<br>boolean表达式 ? 表达式1 : 表达式2</li>
+<li>解释：<br>boolean表达式的结果是true,则整个表达式的结果就是表达式1，相反则是表达式2。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//(关系表达式) ? 表达式1 : 表达式2;</span></span><br><span class="line">    <span class="keyword">int</span> x = <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">int</span> y = <span class="number">5</span>;</span><br><span class="line">    <span class="keyword">int</span> z;</span><br><span class="line">    z = (x &gt; y) ? x : y;<span class="comment">//三目运算符</span></span><br><span class="line"></span><br><span class="line">    System.out.println(<span class="string">"z = "</span> + z);</span><br></pre></td></tr></table></figure>
+
 
       
 
