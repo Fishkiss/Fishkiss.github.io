@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>如何用hexo搭建个人博客! | Just For Fun</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="搭建环境准备大概可以分为以下三步  Node.js 的安装和准备 git的安装和准备 gitHub账户的配置  配置Node.js环境 下载Node.js安装文件：   Windows Installer 32-bit Windows Installer 64-bit  根据自己的Windows版本选择相应的安装文件，要是不知道，就安装32-bit的吧。保持默认设置即可，一路Next，安装很快就结">
-<meta name="keywords" content="java, web, mysql">
+  <meta name="description" content="搭建环境准备大概可以分为以下三步  Node.js 的安装和准备  git的安装和准备  gitHub账户的配置">
+<meta name="keywords" content="-hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何用hexo搭建个人博客!">
 <meta property="og:url" content="http://yoursite.com/2019/08/03/如何用hexo搭建个人博客/index.html">
 <meta property="og:site_name" content="Just For Fun">
-<meta property="og:description" content="搭建环境准备大概可以分为以下三步  Node.js 的安装和准备 git的安装和准备 gitHub账户的配置  配置Node.js环境 下载Node.js安装文件：   Windows Installer 32-bit Windows Installer 64-bit  根据自己的Windows版本选择相应的安装文件，要是不知道，就安装32-bit的吧。保持默认设置即可，一路Next，安装很快就结">
+<meta property="og:description" content="搭建环境准备大概可以分为以下三步  Node.js 的安装和准备  git的安装和准备  gitHub账户的配置">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://raw.githubusercontent.com/gdutxiaoxu/blog_pic/master/19_06/9fe4afa0gw1faljiuibwdj20it0cb3zd.jpg">
-<meta property="og:updated_time" content="2019-08-03T12:13:06.173Z">
+<meta property="og:updated_time" content="2019-08-04T05:51:59.648Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何用hexo搭建个人博客!">
-<meta name="twitter:description" content="搭建环境准备大概可以分为以下三步  Node.js 的安装和准备 git的安装和准备 gitHub账户的配置  配置Node.js环境 下载Node.js安装文件：   Windows Installer 32-bit Windows Installer 64-bit  根据自己的Windows版本选择相应的安装文件，要是不知道，就安装32-bit的吧。保持默认设置即可，一路Next，安装很快就结">
+<meta name="twitter:description" content="搭建环境准备大概可以分为以下三步  Node.js 的安装和准备  git的安装和准备  gitHub账户的配置">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/gdutxiaoxu/blog_pic/master/19_06/9fe4afa0gw1faljiuibwdj20it0cb3zd.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Just For Fun" type="application/atom+xml">
@@ -64,11 +64,11 @@
 			
 				<li><a href="/">主页</a></li>
 	        
+				<li><a href="/tags/随笔/">随笔</a></li>
+	        
 				<li><a href="/archives">归档</a></li>
 	        
-				<li><a href="/categories">分类</a></li>
-	        
-				<li><a href="/tags">标签</a></li>
+				<li><a href="/categories/分类/">分类</a></li>
 	        
 			</ul>
 		</nav>
@@ -158,11 +158,11 @@
 				
 					<li style="width: 25%"><a href="/">主页</a></li>
 		        
+					<li style="width: 25%"><a href="/tags/随笔/">随笔</a></li>
+		        
 					<li style="width: 25%"><a href="/archives">归档</a></li>
 		        
-					<li style="width: 25%"><a href="/categories">分类</a></li>
-		        
-					<li style="width: 25%"><a href="/tags">标签</a></li>
+					<li style="width: 25%"><a href="/categories/分类/">分类</a></li>
 		        
 				</ul>
 			</nav>
@@ -199,9 +199,14 @@
       
         <h3 id="搭建环境准备"><a href="#搭建环境准备" class="headerlink" title="搭建环境准备"></a><strong>搭建环境准备</strong></h3><p>大概可以分为以下三步</p>
 <ul>
-<li>Node.js 的安装和准备</li>
-<li>git的安装和准备</li>
-<li>gitHub账户的配置</li>
+<li><p>Node.js 的安装和准备</p>
+</li>
+<li><p>git的安装和准备</p>
+</li>
+<li><p>gitHub账户的配置</p>
+<a id="more"></a>
+
+</li>
 </ul>
 <h3 id="配置Node-js环境"><a href="#配置Node-js环境" class="headerlink" title="配置Node.js环境"></a>配置Node.js环境</h3><ol>
 <li>下载Node.js安装文件：</li>
@@ -250,6 +255,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -444,6 +460,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">-hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">-java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
