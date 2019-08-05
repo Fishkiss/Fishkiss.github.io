@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | Just For Fun</title>
+  <title>java基础分支、循环、数组练习题 | Just For Fun</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="lazy">
-<meta name="keywords" content="java, web, mysql">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Just For Fun">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="keywords" content="java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java基础分支、循环、数组练习题">
+<meta property="og:url" content="http://yoursite.com/2019/08/05/java基础分支、循环、数组练习题/index.html">
 <meta property="og:site_name" content="Just For Fun">
-<meta property="og:description" content="lazy">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://img03.sogoucdn.com/net/a/04/link?url=https%3A%2F%2Fimg02.sogoucdn.com%2Fapp%2Fa%2F100520093%2Fe7d4cac126941b5a-396dcc73e3007ef8-1d86d5a2296f9415b7faa9269709b04f.jpg&appid=122">
+<meta property="og:updated_time" content="2019-08-05T08:23:39.623Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Just For Fun">
-<meta name="twitter:description" content="lazy">
+<meta name="twitter:title" content="java基础分支、循环、数组练习题">
+<meta name="twitter:image" content="https://img03.sogoucdn.com/net/a/04/link?url=https%3A%2F%2Fimg02.sogoucdn.com%2Fapp%2Fa%2F100520093%2Fe7d4cac126941b5a-396dcc73e3007ef8-1d86d5a2296f9415b7faa9269709b04f.jpg&appid=122">
   
     <link rel="alternative" href="/atom.xml" title="Just For Fun" type="application/atom+xml">
   
@@ -174,40 +174,108 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-java基础分支、循环、数组练习题" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      java基础分支、循环、数组练习题
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+
+        
+        
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 --------------------- 
 <a href="/2019/08/05/java基础分支、循环、数组练习题/" class="archive-article-date">
   	<time datetime="2019-08-05T07:48:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-05</time>
 </a>
 
 
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/05/java基础分支、循环、数组练习题/">java基础分支、循环、数组练习题</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://img03.sogoucdn.com/net/a/04/link?url=https%3A%2F%2Fimg02.sogoucdn.com%2Fapp%2Fa%2F100520093%2Fe7d4cac126941b5a-396dcc73e3007ef8-1d86d5a2296f9415b7faa9269709b04f.jpg&appid=122" alt="img"></p>
+<a id="more"></a>
 
-        <div class="article-info info-on-right">
-          
+<p><strong>1、编写程序实现对给定的 4 个整数从大到小的顺序排列。</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">test01</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span>[] arr = &#123; <span class="number">5</span>, <span class="number">6</span>, <span class="number">9</span>, <span class="number">2</span> &#125;;</span><br><span class="line">		<span class="keyword">int</span> max = arr[<span class="number">0</span>];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; arr.length; j++) &#123;</span><br><span class="line">				<span class="keyword">if</span> (arr[j] &gt; arr[i]) &#123;</span><br><span class="line">					<span class="keyword">int</span> temp = arr[i];</span><br><span class="line">					arr[i] = arr[j];</span><br><span class="line">					arr[j] = temp;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">			System.out.println(arr[i]);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>2、输入 3 个正数，判断能否构成一个三角形。</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">test02</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		System.out.println(<span class="string">"请输入三个正数"</span>);</span><br><span class="line">		<span class="keyword">int</span> a = input.nextInt();</span><br><span class="line">		<span class="keyword">int</span> b = input.nextInt();</span><br><span class="line">		<span class="keyword">int</span> c = input.nextInt();</span><br><span class="line">		<span class="keyword">if</span> (a + b &gt; c &amp;&amp; a + c &gt; b &amp;&amp; b + c &gt; a) &#123;</span><br><span class="line">			System.out.println(<span class="string">"是三角形"</span>);</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			System.out.println(<span class="string">"不是三角形"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>3、编写程序，给定一个学生成绩，给出相应等级：</strong></p>
+<p>90~100 优秀</p>
+<p>80~89 良好</p>
+<p>70~79 中等</p>
+<p>60~69 及格</p>
+<p>0~59 不及格</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">test03</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Scanner s = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		System.out.println(<span class="string">"请输入成绩0-100"</span>);</span><br><span class="line">		<span class="keyword">int</span> g = s.nextInt();</span><br><span class="line">		<span class="keyword">while</span> (g &gt; <span class="number">0</span>) &#123;</span><br><span class="line">			<span class="keyword">if</span> (g &gt;= <span class="number">90</span>) &#123;</span><br><span class="line">				System.out.println(<span class="string">"优秀"</span>);</span><br><span class="line">			&#125; <span class="keyword">else</span> <span class="keyword">if</span> (g &gt;= <span class="number">80</span>) &#123;</span><br><span class="line">				System.out.println(<span class="string">"良好"</span>);</span><br><span class="line">			&#125; <span class="keyword">else</span> <span class="keyword">if</span> (g &gt;= <span class="number">70</span>) &#123;</span><br><span class="line">				System.out.println(<span class="string">"中等"</span>);</span><br><span class="line">			&#125; <span class="keyword">else</span> <span class="keyword">if</span> (g &gt;= <span class="number">60</span>) &#123;</span><br><span class="line">				System.out.println(<span class="string">"及格"</span>);</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				System.out.println(<span class="string">"不及格"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			g = s.nextInt();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>4、编写程序，对输入的一个整数，按相反顺序输出该数。例如，输入为 3578、输出为 8753。</strong></p>
+<p>注：这题适合用集合中的LinkedList类来写，因为集合的长度可以变，而数组的长度是固定的</p>
+<p>方法一：集合</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.LinkedList;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">test04</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		LinkedList&lt;Integer&gt; list = <span class="keyword">new</span> LinkedList();</span><br><span class="line">		<span class="keyword">boolean</span> flaq = <span class="keyword">true</span>;</span><br><span class="line">		<span class="keyword">while</span> (flaq) &#123;</span><br><span class="line">			Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">			System.out.println(<span class="string">"输入"</span>);</span><br><span class="line">			<span class="keyword">int</span> n = input.nextInt();</span><br><span class="line">			<span class="keyword">if</span> (n == -<span class="number">1</span>) &#123;</span><br><span class="line">				flaq = <span class="keyword">false</span>;</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				list.addFirst(n);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(list);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>方法二：数组</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">test04_</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span>[] arr = &#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span> &#125;;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = arr.length - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">			System.out.print(arr[i] + <span class="string">" "</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>5、用 while 循环，计算 1~200 之间所有 3 的倍数之和。</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">test05</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> n =<span class="number">3</span>;</span><br><span class="line">		<span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">while</span>(n&lt;=<span class="number">200</span>)&#123;</span><br><span class="line">			<span class="keyword">if</span>(n%<span class="number">3</span>==<span class="number">0</span>)&#123;</span><br><span class="line">				sum+=n;</span><br><span class="line">			&#125;</span><br><span class="line">			n++;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(sum);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>6、使用循环语句输出下面的图形。</strong></p>
+<p>#</p>
+<p>###</p>
+<p>#####</p>
+<p>#######</p>
+<p>#########</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">test06</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;<span class="number">5</span>;i++)&#123;</span><br><span class="line">			System.out.println(<span class="string">"#"</span>);</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;i;j++)&#123;</span><br><span class="line">				System.out.print(<span class="string">"##"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>7、企业发放的奖金依据利润提成。</strong><br> 利润(I)低于或等于10万元时，奖金可提10%；<br> 利润高于10万元，低于20万元时，低于10万元的部分按10%提成，高于10万元的部分，可提成7.5%；<br> 20万到40万之间时。高于20万元的部分，可提成5%；<br> 40万到60万之间时高于40万元的部分。可提成3%；<br> 60万到100万之间时，高于60万元的部分。可提成1.5%;<br> 高于100万元时，超过100万元的部分按1%提成<br> 从键盘输入当月利润I。求应发放奖金总数？</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">test07</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Scanner input = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		System.out.println(<span class="string">"请输入月利润 :  万元"</span>);</span><br><span class="line">		<span class="keyword">int</span> n = input.nextInt();</span><br><span class="line">		<span class="keyword">double</span> sum = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">if</span> (n &lt;= <span class="number">10</span>) &#123;</span><br><span class="line">			sum = <span class="number">0.1</span> * n;</span><br><span class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span> (n &lt;= <span class="number">20</span>) &#123;</span><br><span class="line">			sum = <span class="number">0.1</span> * <span class="number">10</span> + (n - <span class="number">10</span>) * <span class="number">0.075</span>;</span><br><span class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span> (n &lt;= <span class="number">40</span>) &#123;</span><br><span class="line">			sum = <span class="number">0.1</span> * <span class="number">10</span> + <span class="number">10</span> * <span class="number">0.075</span> + (n - <span class="number">20</span>) * <span class="number">0.05</span>;</span><br><span class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span> (n &lt;= <span class="number">60</span>) &#123;</span><br><span class="line">			sum = <span class="number">0.1</span> * <span class="number">10</span> + <span class="number">10</span> * <span class="number">0.075</span> + <span class="number">20</span> * <span class="number">0.05</span> + (n - <span class="number">40</span>) * <span class="number">0.03</span>;</span><br><span class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span> (n &lt;= <span class="number">100</span>) &#123;</span><br><span class="line">			sum = <span class="number">0.1</span> * <span class="number">10</span> + <span class="number">10</span> * <span class="number">0.075</span> + <span class="number">20</span> * <span class="number">0.05</span> + <span class="number">20</span> * <span class="number">0.03</span> + (n - <span class="number">60</span>) * <span class="number">0.015</span>;</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			sum = <span class="number">0.1</span> * <span class="number">10</span> + <span class="number">10</span> * <span class="number">0.075</span> + <span class="number">20</span> * <span class="number">0.05</span> + <span class="number">20</span> * <span class="number">0.03</span> + <span class="number">40</span> * <span class="number">0.015</span> + (n - <span class="number">100</span>) * <span class="number">0.01</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">"奖金为:"</span> + sum + <span class="string">"万元"</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -219,229 +287,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/05/java基础分支、循环、数组练习题/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
---------------------- 
-<a href="/2019/08/04/java实训第一阶段基础提炼(二)/" class="archive-article-date">
-  	<time datetime="2019-08-04T08:16:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-04</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/08/04/java实训第一阶段基础提炼(二)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">java实训第一阶段基础提炼(二)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/04/java实训第一阶段基础提炼(二)/">java实训第一阶段基础提炼(二)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
---------------------- 
-<a href="/2019/08/04/fl/" class="archive-article-date">
-  	<time datetime="2019-08-04T06:04:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-04</time>
-</a>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/04/fl/">fl</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/分类//" class="article-tag-list-link color3">分类</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
---------------------- 
-<a href="/2019/08/04/随笔/" class="archive-article-date">
-  	<time datetime="2019-08-04T05:53:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-04</time>
-</a>
-
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/04/随笔/">百无聊赖</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
---------------------- 
-<a href="/2019/08/03/java实训第一阶段基础提炼(一)/" class="archive-article-date">
-  	<time datetime="2019-08-03T12:56:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-03</time>
-</a>
-
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/03/java实训第一阶段基础提炼(一)/">java实训第一阶段基础提炼(一)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
---------------------- 
-<a href="/2019/08/03/如何用hexo搭建个人博客/" class="archive-article-date">
-  	<time datetime="2019-08-03T05:10:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-03</time>
-</a>
-
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/03/如何用hexo搭建个人博客/">如何用hexo搭建个人博客!</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -475,8 +420,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
